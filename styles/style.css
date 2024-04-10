@@ -8,4 +8,76 @@
 
 html {
   font-size: 62.5%;
+  color: #212529;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  margin-bottom: 1vh;
+}
+
+h2 {
+  width: 100%;
+}
+
+main {
+  background: linear-gradient(139deg, rgb(54, 79, 199) 0%, rgb(92, 124, 250) 50%, rgb(145, 167, 255) 100%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main {
+  background-color: #f8f9fa;
+  width: 80vw;
+  height: 80%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+main .main .headers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 2vh 5vw;
+}
+main .main .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  font-size: 1.2rem;
+  width: 80vw;
+  margin: 3vh 5vw;
+}
+main .main .inputs .input {
+  width: 28vw;
+  height: 25vh;
+  text-align: left;
+  text-wrap: pretty;
+  font-family: "Roboto Mono", monospace;
+}
+main .main .calculate {
+  width: 16vw;
+  height: 9vh;
+  margin-top: 4vh;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 2rem;
+  border-radius: 18px;
+  transition: all 0.1s;
+}
+main .main .calculate:hover {
+  background-color: #91a7ff;
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
 }/*# sourceMappingURL=style.css.map */

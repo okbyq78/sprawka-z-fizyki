@@ -4,10 +4,38 @@
         <meta charset="UTF-8" />
         <title>Sprawozdania z fizyki</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./styles/style.css" />
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <main>
+            <div class="main">
+                <h1>Zaokrąglanie</h1>
+                <div class="headers">
+                    <h2>Zmierzone wartości (oddzielone przecinkiem):</h2>
+                    <h2>
+                        Niepewności dla każdej z wartości (lub jedna jeśli każda
+                        jest taka sama):
+                    </h2>
+                </div>
+                <div class="inputs">
+                    <textarea
+                        class="input values"
+                        placeholder="1.32, 5.76, -876.34"
+                    ></textarea>
+                    <textarea
+                        class="input uncertainities"
+                        placeholder="0.00654, 45.23111, 69.6969"
+                    ></textarea>
+                </div>
+                <button class="calculate">Oblicz -></button>
+            </div>
+        </main>
 
         <script src="./app.js"></script>
     </body>
