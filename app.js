@@ -90,13 +90,9 @@ calculateButton.addEventListener('click', () => {
 
             if (String(uncerArray[i]).includes('.')) {
                 // WTF????
-                ceilPrecisions[i] = String(
-                    parseFloat(
-                        String(uncerArray[i]).slice(
-                            String(uncerArray[i]).indexOf('.') + 1,
-                            String(uncerArray[i]).length - 1
-                        )
-                    )
+                ceilPrecisions[i] = String(uncerArray[i]).slice(
+                    String(uncerArray[i]).indexOf('.'),
+                    String(uncerArray[i]).length - 1
                 ).length;
             }
         });
