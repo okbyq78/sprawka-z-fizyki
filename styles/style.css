@@ -22,6 +22,10 @@ h2 {
   width: 100%;
 }
 
+.error {
+  color: #ff6b6b;
+}
+
 main {
   background: linear-gradient(139deg, rgb(54, 79, 199) 0%, rgb(92, 124, 250) 50%, rgb(145, 167, 255) 100%);
   width: 100vw;
@@ -32,7 +36,7 @@ main {
 }
 main .main {
   background-color: #f8f9fa;
-  width: 80vw;
+  width: 75vw;
   height: 80%;
   border-radius: 15px;
   display: flex;
@@ -55,7 +59,7 @@ main .main .inputs {
   align-items: center;
   gap: 10vw;
   font-size: 1.2rem;
-  width: 80vw;
+  width: 75vw;
   margin: 3vh 5vw;
 }
 main .main .inputs .input {
@@ -64,6 +68,7 @@ main .main .inputs .input {
   text-align: left;
   text-wrap: pretty;
   font-family: "Roboto Mono", monospace;
+  border-radius: 7px;
 }
 main .main .calculate {
   width: 16vw;

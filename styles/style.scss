@@ -26,6 +26,12 @@ h2 {
     width: 100%;
 }
 
+// utilities
+
+.error {
+    color: #ff6b6b;
+}
+
 // styles
 
 main {
@@ -45,7 +51,7 @@ main {
 
     .main {
         background-color: #f8f9fa;
-        width: 80vw;
+        width: 75vw;
         height: 80%;
         border-radius: 15px;
 
@@ -76,7 +82,7 @@ main {
 
             font-size: 1.2rem;
 
-            width: 80vw;
+            width: 75vw;
             margin: 3vh 5vw;
 
             .input {
@@ -86,6 +92,8 @@ main {
                 text-align: left;
                 text-wrap: pretty;
                 font-family: 'Roboto Mono', monospace;
+
+                border-radius: 7px;
             }
         }
 
