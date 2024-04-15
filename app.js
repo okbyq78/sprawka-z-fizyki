@@ -97,8 +97,6 @@ calculateButton.addEventListener('click', () => {
             }
         });
 
-        console.log(valuesArray, uncerArray);
-
         for (let i = 0; i < valuesArray.length; i++) {
             valuesArray[i] = parseFloat(
                 valuesArray[i].toPrecision(ceilPrecisions[i])
