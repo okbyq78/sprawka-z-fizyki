@@ -2,6 +2,7 @@
 
 const header = document.querySelector('h1');
 const calculateButton = document.querySelector('.calculate');
+const backButton = document.querySelector('.back');
 const values = document.querySelector('.values');
 const uncertainities = document.querySelector('.uncertainities');
 
@@ -13,6 +14,22 @@ let ceilPrecisions = [];
 // debug
 values.value = '26231, 0.3794';
 uncertainities.value = '1932, 0.05186';
+
+const showModal = (me, un) => {
+    document.querySelector('.modal').classList.remove('hidden');
+
+    let re = [];
+
+    for (let i = 0; i < valuesArray.length; i++) {
+        re[i] = ` ${valuesArray[i]} ± ${uncerArray[i]}`;
+    }
+
+    document.querySelector('.p').textContent = `Pomiary: ${re}`;
+};
+
+backButton.addEventListener('click', () => {
+    document.querySelector('.modal').classList.add('hidden');
+});
 
 calculateButton.addEventListener('click', () => {
     if (values.value == '' || uncertainities.value == '') {
@@ -98,10 +115,15 @@ calculateButton.addEventListener('click', () => {
         });
 
         for (let i = 0; i < valuesArray.length; i++) {
+            // TODO: nie zawsze działa, trzeba jeszcze raz obliczyć precyzję niepewności i dopiero wtedy zaokrąglać
             valuesArray[i] = parseFloat(
                 valuesArray[i].toPrecision(ceilPrecisions[i])
             );
         }
+
+        showModal();
+
+        // TODO: średnie, odchylenia, student-fisher itd...
 
         console.log(valuesArray, uncerArray);
     }

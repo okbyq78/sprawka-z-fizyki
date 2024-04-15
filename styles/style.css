@@ -22,8 +22,29 @@ h2 {
   width: 100%;
 }
 
+.button {
+  width: 16vw;
+  height: 9vh;
+  margin-top: 4vh;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  font-size: 2rem;
+  border-radius: 18px;
+  transition: all 0.1s;
+}
+.button:hover {
+  background-color: #91a7ff;
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+}
+
 .error {
   color: #ff6b6b;
+}
+
+.hidden {
+  display: none !important;
 }
 
 main {
@@ -71,19 +92,29 @@ main .main .inputs .input {
   font-family: "Roboto Mono", monospace;
   border-radius: 7px;
 }
-main .main .calculate {
-  width: 16vw;
-  height: 9vh;
-  margin-top: 4vh;
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
-  font-size: 2rem;
-  border-radius: 18px;
-  transition: all 0.1s;
+
+.modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .main .calculate:hover {
-  background-color: #91a7ff;
-  cursor: pointer;
-  transform: translateY(-10px);
-  box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+.modal .modal-wrapper {
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  opacity: 1;
+  border-radius: 15px;
+}
+.modal .modal-wrapper .p {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
